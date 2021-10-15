@@ -1,3 +1,5 @@
+import Joi from 'joi';
 import useJoiState from './hooks/useJoiState';
+import useLocalStorage from './hooks/useLocalStorage';
 
-export { useJoiState };
+export { Joi, useJoiState, useLocalStorage };
