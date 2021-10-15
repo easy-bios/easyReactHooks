@@ -1,3 +1,3 @@
-const useJoiState = require('./hooks/useJoiState');
+import useJoiState from './hooks/useJoiState';
 
-module.exports = { useJoiState };
+export { useJoiState };
