@@ -17,9 +17,11 @@ https://www.npmjs.com/package/joi
 const [mail, setMail, mailValid, validatedValue] = useJoiState(
   {
     Email: Joi.string()
-    .trim()
     .email({ tlds: { allow: false } })
+    .case("lower")
+    .trim()
   },
   initialValue
 );
 ```
+The "validetedValue" in this case is the "value" but trimmed and lower case as specified by our Joi Scheme.
