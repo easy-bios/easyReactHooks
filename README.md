@@ -1,6 +1,6 @@
 # easyReactHooks
 More React Hooks for everyday use. 👍
-
+Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 
 ## useLocalStorage
 Save State to local Storage.
@@ -14,7 +14,7 @@ On initializing first the localStorage is read and if empty the init value.
 States with input validation, based on Joi:
 https://www.npmjs.com/package/joi
 ```javascript
-const [mail, setMail, mailValid] = useJoiState(
+const [mail, setMail, mailValid, validatedValue] = useJoiState(
   {
     Email: Joi.string()
     .trim()
@@ -23,4 +23,3 @@ const [mail, setMail, mailValid] = useJoiState(
   initialValue
 );
 ```
-https://codepen.io/easy-bios/pen/KKvVwdv
