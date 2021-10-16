@@ -1,5 +1,5 @@
 # easyReactHooks
-More React Hooks for everyday use. 👍
+More React Hooks for everyday use. 👍\
 Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 
 ## useLocalStorage
