@@ -19,8 +19,7 @@ On initializing first the localStorage is read and (if empty) then the initial v
 States with input validation, based on Joi:
 https://www.npmjs.com/package/joi
 ```javascript
-import { useJoiState } from 'easy-react-hooks';
-import Joi from 'joi';
+import { useJoiState, Joi } from 'easy-react-hooks';
 
 const [mail, setMail, mailValid, validatedValue] = useJoiState(
   {
