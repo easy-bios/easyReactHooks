@@ -2,18 +2,26 @@
 More React Hooks for everyday use. 👍\
 Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 
+## install
+`npm i easy-react-hooks`
+
 ## useLocalStorage
 Save State to local Storage.
 ```javascript
+import { useLocalStorage } from 'easy-react-hooks';
+
 const [value, setValue] = useLocalStorage(localStorageKey, initValue);
 ```
 Any setValue saves the value to the localStorage.
-On initializing first the localStorage is read and if empty the init value.
+On initializing first the localStorage is read and (if empty) then the initial value.
 
 ## useJoiState
 States with input validation, based on Joi:
 https://www.npmjs.com/package/joi
 ```javascript
+import { useJoiState } from 'easy-react-hooks';
+import Joi from 'joi';
+
 const [mail, setMail, mailValid, validatedValue] = useJoiState(
   {
     Email: Joi.string()
