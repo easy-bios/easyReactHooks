@@ -1,6 +1,6 @@
 {
   "name": "easy-react-hooks",
-  "version": "1.1.0",
+  "version": "2.0.1",
   "description": "More React Hooks for everyday use. 👍",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/easy-bios/easyReactHooks#readme",
   "peerDependencies": {
-    "joi": "^17.4.2",
-    "react": "^17.0.2"
+    "react": ">=17.0.0"
+  },
+  "dependencies": {
+    "joi": "^17.6.0"
   }
 }
