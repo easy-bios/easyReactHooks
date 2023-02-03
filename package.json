@@ -1,29 +1,30 @@
 {
-  "name": "easy-react-hooks",
-  "version": "2.0.1",
-  "description": "More React Hooks for everyday use. 👍",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/easy-bios/easyReactHooks.git"
-  },
-  "keywords": [
-    "react",
-    "hooks"
-  ],
-  "author": "Patryk R. Fischer",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/easy-bios/easyReactHooks/issues"
-  },
-  "homepage": "https://github.com/easy-bios/easyReactHooks#readme",
-  "peerDependencies": {
-    "react": ">=17.0.0"
-  },
-  "dependencies": {
-    "joi": "^17.6.0"
-  }
+    "name": "easy-react-hooks",
+    "version": "3.1.1",
+    "description": "More React Hooks for everyday use. 👍",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/easy-bios/easyReactHooks.git"
+    },
+    "keywords": [
+        "react",
+        "hooks",
+        "animation"
+    ],
+    "author": "Patryk R. Fischer",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/easy-bios/easyReactHooks/issues"
+    },
+    "homepage": "https://github.com/easy-bios/easyReactHooks#readme",
+    "peerDependencies": {
+        "react": ">=18.0.0"
+    },
+    "dependencies": {
+        "joi": "^17.6.0"
+    }
 }

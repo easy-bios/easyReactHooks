@@ -9,12 +9,36 @@ Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 2. useJoiState
 3. useDebouncedState
 4. useDebouncedEffect
+5. TrackingContainer
 
 ---
 
 ## install
 
 `npm i easy-react-hooks`
+
+---
+
+## TrackingContainer
+
+`<TrackingContainer></TrackingContainer>`
+
+Makes the contents track the mouse position for smooth animation.
+
+Bigger faktor will track less.
+
+```javascript
+import React from 'react';
+import { TrackingContainer } from 'easy-react-hooks';
+
+function ExampleVcard() {
+    return (
+        <TrackingContainer>
+            <h2>Example</h2>
+            <img src="https://me-chip.com/images/logo/Logo_01.svg" style={{width: "256px"}} />
+        </TrackingContainer>
+    )
+```
 
 ---
 
@@ -45,16 +69,16 @@ States with input validation, based on Joi: https://www.npmjs.com/package/joi
 import { useJoiState, Joi } from 'easy-react-hooks';
 
 const [validationValues, setValidationValues, validation, validatedValues] =
-  useJoiState(
-    {
-      Email: Joi.string()
-        .trim()
-        .lowercase()
-        .email({ tlds: { allow: false } }),
-      Number: Joi.number().min(5).max(100).multiple(3),
-    },
-    { Email: 'me@example.com', Number: 111 }
-  );
+    useJoiState(
+        {
+            Email: Joi.string()
+                .trim()
+                .lowercase()
+                .email({ tlds: { allow: false } }),
+            Number: Joi.number().min(5).max(100).multiple(3),
+        },
+        { Email: 'me@example.com', Number: 111 }
+    );
 ```
 
 ---
@@ -67,8 +91,8 @@ Will set the state + give you a debounced value of this state.
 
 ```javascript
 const [notDeboucedState, setDebouncedState, deboucedState] = useDebouncedState(
-  'initial value',
-  500
+    'initial value',
+    500
 );
 ```
 
@@ -82,10 +106,10 @@ A useEffect that is debounced by X ms.
 
 ```javascript
 useDebouncedEffect(
-  () => {
-    console.log('something updated!');
-  },
-  [],
-  500
+    () => {
+        console.log('something updated!');
+    },
+    [],
+    500
 );
 ```
