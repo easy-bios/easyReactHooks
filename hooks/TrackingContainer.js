@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function TrackingContainer({ style, className, children, faktor = 100 }) {
+const TrackingContainer = ({ style, className, children, faktor = 100 }) => {
     const [transformX, setTransformX] = useState(0);
     const [transformY, setTransformY] = useState(0);
     const containerRef = useRef();
@@ -38,6 +38,6 @@ function TrackingContainer({ style, className, children, faktor = 100 }) {
             </div>
         </div>
     );
-}
+};
 
 export default TrackingContainer;
