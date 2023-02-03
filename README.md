@@ -21,7 +21,7 @@ Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 
 ## TrackingContainer
 
-`<TrackingContainer></TrackingContainer>`
+`<TrackingContainer style={{}} className="" faktor={100}></TrackingContainer>`
 
 Makes the contents track the mouse position for smooth animation.
 
