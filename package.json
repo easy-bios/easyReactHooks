@@ -1,6 +1,6 @@
 {
     "name": "easy-react-hooks",
-    "version": "3.1.2",
+    "version": "3.1.3",
     "description": "More React Hooks for everyday use. 👍",
     "main": "index.js",
     "scripts": {

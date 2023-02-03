@@ -23,6 +23,8 @@ Try it on CodePen: https://codepen.io/easy-bios/pen/KKvVwdv
 
 `<TrackingContainer style={{}} className="" faktor={100}></TrackingContainer>`
 
+Live demo: https://me-chip.com/
+
 Makes the contents track the mouse position for smooth animation.
 
 Bigger faktor will track less.
